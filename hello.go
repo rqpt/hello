@@ -6,6 +6,7 @@ const spanish = "Spanish"
 const englishHelloPrefix = "Hello, "
 const spanishHelloPrefix = "Hola, "
 const frenchHelloPrefix = "Bonjour, "
+const afrikaansHelloPrefix = "Goeiedag, "
 
 func Hello(name string, language string) string {
 	if name == "" {
@@ -19,6 +20,8 @@ func Hello(name string, language string) string {
 		prefix = frenchHelloPrefix
 	case "Spanish":
 		prefix = spanishHelloPrefix
+	case "Afrikaans":
+		prefix = afrikaansHelloPrefix
 	}
 
 	return prefix + name
